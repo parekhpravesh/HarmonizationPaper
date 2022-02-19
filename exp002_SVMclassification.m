@@ -29,7 +29,7 @@ function exp002_SVMclassification(dataTable,  regressTIV, regressAge, ...
 % A 'Results.mat' file is saved in the outDir containing the results 
 % 
 %% Notes:
-% The goal of this function is to ask "can we predict (above chance level) 
+% The goal of this experiment is to ask "can we predict (above chance level) 
 % which scanner/site the data comes from?"
 % 
 % In the first part of this experiment, in a cross-validation framework, we
@@ -631,23 +631,23 @@ if ~skipCV
     performanceTrain_raw{1, 1} = repNumber;
     performanceTrain_raw{1, 2} = mean(foldwiseTrainAcc_raw);
     performanceTrain_raw{1, 3} = std(foldwiseTrainAcc_raw);
-    performanceTrain_raw{1, 4} = [num2str(performanceTrain_raw{1,2}, '%.2f'), ' ± ', num2str(performanceTrain_raw{1,3}, '%.2f')];
+    performanceTrain_raw{1, 4} = [num2str(performanceTrain_raw{1,2}, '%.2f'), ' Â± ', num2str(performanceTrain_raw{1,3}, '%.2f')];
 
     performanceTest_raw{1,  1} = repNumber;
     performanceTest_raw{1,  2} = mean(foldwiseTestAcc_raw);
     performanceTest_raw{1,  3} = std(foldwiseTestAcc_raw);
-    performanceTest_raw{1,  4} = [num2str(performanceTest_raw{1, 2}, '%.2f'), ' ± ', num2str(performanceTest_raw{1, 3}, '%.2f')];
+    performanceTest_raw{1,  4} = [num2str(performanceTest_raw{1, 2}, '%.2f'), ' Â± ', num2str(performanceTest_raw{1, 3}, '%.2f')];
 
     % Model performance: average over folds - harmonized, actual data
     performanceTrain_harm{1, 1} = repNumber;
     performanceTrain_harm{1, 2} = mean(foldwiseTrainAcc_harm);
     performanceTrain_harm{1, 3} = std(foldwiseTrainAcc_harm);
-    performanceTrain_harm{1, 4} = [num2str(performanceTrain_harm{1,2}, '%.2f'), ' ± ', num2str(performanceTrain_harm{1,3}, '%.2f')];
+    performanceTrain_harm{1, 4} = [num2str(performanceTrain_harm{1,2}, '%.2f'), ' Â± ', num2str(performanceTrain_harm{1,3}, '%.2f')];
 
     performanceTest_harm{1,  1} = repNumber;
     performanceTest_harm{1,  2} = mean(foldwiseTestAcc_harm);
     performanceTest_harm{1,  3} = std(foldwiseTestAcc_harm);
-    performanceTest_harm{1,  4} = [num2str(performanceTest_harm{1, 2}, '%.2f'), ' ± ', num2str(performanceTest_harm{1, 3}, '%.2f')];
+    performanceTest_harm{1,  4} = [num2str(performanceTest_harm{1, 2}, '%.2f'), ' Â± ', num2str(performanceTest_harm{1, 3}, '%.2f')];
 else
     % Set these to NaN
     performanceTrain_raw{1, 1} = NaN;
@@ -675,21 +675,21 @@ end
 performanceTrain_raw_Perm{1, 1} = repNumber;
 performanceTrain_raw_Perm{1, 2} = mean(foldwiseTrainAcc_raw_Perm);
 performanceTrain_raw_Perm{1, 3} = std(foldwiseTrainAcc_raw_Perm);
-performanceTrain_raw_Perm{1, 4} = [num2str(performanceTrain_raw_Perm{1,2}, '%.2f'), ' ± ', num2str(performanceTrain_raw_Perm{1,3}, '%.2f')];
+performanceTrain_raw_Perm{1, 4} = [num2str(performanceTrain_raw_Perm{1,2}, '%.2f'), ' Â± ', num2str(performanceTrain_raw_Perm{1,3}, '%.2f')];
 
 performanceTest_raw_Perm{1,  1} = repNumber;
 performanceTest_raw_Perm{1,  2} = mean(foldwiseTestAcc_raw_Perm);
 performanceTest_raw_Perm{1,  3} = std(foldwiseTestAcc_raw_Perm);
-performanceTest_raw_Perm{1,  4} = [num2str(performanceTest_raw_Perm{1, 2}, '%.2f'), ' ± ', num2str(performanceTest_raw_Perm{1, 3}, '%.2f')];
+performanceTest_raw_Perm{1,  4} = [num2str(performanceTest_raw_Perm{1, 2}, '%.2f'), ' Â± ', num2str(performanceTest_raw_Perm{1, 3}, '%.2f')];
 
 % Model performance: average over folds - harmonized, permutation
 performanceTrain_harm_Perm{1, 1} = repNumber;
 performanceTrain_harm_Perm{1, 2} = mean(foldwiseTrainAcc_harm_Perm);
 performanceTrain_harm_Perm{1, 3} = std(foldwiseTrainAcc_harm_Perm);
-performanceTrain_harm_Perm{1, 4} = [num2str(performanceTrain_harm_Perm{1,2}, '%.2f'), ' ± ', num2str(performanceTrain_harm_Perm{1,3}, '%.2f')];
+performanceTrain_harm_Perm{1, 4} = [num2str(performanceTrain_harm_Perm{1,2}, '%.2f'), ' Â± ', num2str(performanceTrain_harm_Perm{1,3}, '%.2f')];
 
 performanceTest_harm_Perm{1,  1} = repNumber;
 performanceTest_harm_Perm{1,  2} = mean(foldwiseTestAcc_harm_Perm);
 performanceTest_harm_Perm{1,  3} = std(foldwiseTestAcc_harm_Perm);
-performanceTest_harm_Perm{1,  4} = [num2str(performanceTest_harm_Perm{1, 2}, '%.2f'), ' ± ', num2str(performanceTest_harm_Perm{1, 3}, '%.2f')];
+performanceTest_harm_Perm{1,  4} = [num2str(performanceTest_harm_Perm{1, 2}, '%.2f'), ' Â± ', num2str(performanceTest_harm_Perm{1, 3}, '%.2f')];
 % -------------------------------------------------------------------------
