@@ -36,5 +36,4 @@ The main input variable is a table type variable having the following columns:
 * Actual features start from column 8 onwards
 
 ## Citation
-The manuscript is under preparation:
-Parekh P., Bhalerao G.V., John J.P., Venkatasubramanian G., and the ADBS consortium. Sample size requirement for achieving multisite harmonization using structural brain MRI features. 
+Parekh, P., Vivek Bhalerao, G., Viswanath, B., Rao, N.P., Narayanaswamy, J.C., Sivakumar, P.T., Kandasamy, A., Kesavan, M., Mehta, U.M., Mukherjee, O., Purushottam, M., Mehta, B., Kandavel, T., Binukumar, B., Saini, J., Jayarajan, D., Shyamsundar, A., Moirangthem, S., Vijay Kumar, K.G., Mahadevan, J., Holla, B., Thirthalli, J., Gangadhar, B.N., Murthy, P., Panicker, M.M., Bhalla, U.S., Chattarji, S., Benegal, V., Varghese, M., Reddy, J.Y.C., Raghu, P., Rao, M., Jain, S., John, J.P., Venkatasubramanian, G., 2022. Sample size requirement for achieving multisite harmonization using structural brain MRI features. NeuroImage 264, 119768. https://doi.org/10.1016/j.neuroimage.2022.119768
